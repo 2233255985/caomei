@@ -1,0 +1,40 @@
+# ============================================================
+# Caomei 草莓分割 — 软件（Web 应用）环境依赖
+# ============================================================
+# 安装：pip install -r requirements-software.txt
+# 环境：PC (Windows), Python 3.10
+# ============================================================
+
+# ---------- Web 框架 ----------
+flask==3.1.0
+flask-cors==3.0.10
+flask-sqlalchemy==3.1.1
+gunicorn==23.0.0
+
+# ---------- 推理引擎 ----------
+onnxruntime==1.20.1
+
+# ---------- 图像/视频处理 ----------
+opencv-python==4.10.0.84
+numpy==1.26.4
+
+# ---------- HTTP 客户端 ----------
+requests==2.32.3
+
+# ============================================================
+# 前端依赖 (Node.js / npm)
+# ============================================================
+# 前端位于 frontend/，package.json 中已声明：
+#   vue ^3.5.0, vue-router ^4.4.0, axios ^1.7.0
+#   echarts ^5.5.0, vite ^6.0.0, @vitejs/plugin-vue ^5.1.0
+# 安装：cd frontend && npm install
+
+# ============================================================
+# Atlas 200 DK 板端依赖（板子为 Ubuntu 18.04 aarch64）
+# ============================================================
+# 通过 apt 安装：
+#   sudo apt install -y python3-opencv
+# 通过 pip3 安装：
+#   pip3 install flask flask-cors numpy requests
+# ACLLite SDK（板端专用）：
+#   /home/HwHiAiUser/Ascend/thirdpart/aarch64/acllite/
