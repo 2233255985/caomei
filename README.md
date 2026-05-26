@@ -2,7 +2,7 @@
 
 YOLOv8s-seg 草莓分割模型，部署在 Atlas 200 DK（Ascend 310）。
 
-基于 StrawDI_Db1 温室草莓数据集训练，mAP50 0.922。提供 Flask 后端检测 API 和 Vue 3 前端界面，支持本地 ONNX 推理和 Atlas 远程推理。
+基于 [StrawDI_Db1](https://drive.google.com/file/d/1elFB-q9dgPbfnleA7qIrTb96Qsli8PZl/view) 温室草莓数据集训练，mAP50 0.922。提供 Flask 后端检测 API 和 Vue 3 前端界面，支持本地 ONNX 推理和 Atlas 远程推理。
 
 ---
 
